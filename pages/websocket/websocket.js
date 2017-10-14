@@ -6,7 +6,7 @@ const lab = require('../../lib/lab');
 Page({
   data: {
     status: 'waiting',
-    url: 'wss://' + config.host + '/ws',
+    url: 'wss://' + config.wsshost + '/ws',
     connecting: false,
     hintLine1: '完成服务器开发，',
     hintLine2: '让服务器支持 WebSocket 连接'

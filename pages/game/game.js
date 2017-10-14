@@ -91,7 +91,7 @@ Page({
 
         const tunnel = this.tunnel = new Tunnel();
         try {
-            yield tunnel.connect(`wss://${app.config.host}/game`, wafer.buildSessionHeader());
+            yield tunnel.connect(`wss://${app.config.wsshost}/game`, wafer.buildSessionHeader());
         } catch (connectError) {
             console.error({ connectError });
             this.setData({ gameInfo: "连接错误" });
